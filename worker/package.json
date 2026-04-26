@@ -1,8 +1,9 @@
 {
   "name": "worker",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "worker.js",
   "scripts": {
+    "start": "node worker.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -10,6 +11,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "aws-sdk": "^2.1693.0",
     "axios": "^1.15.2"
   }
 }

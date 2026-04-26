@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Video Upload</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Video Processing Upload</h1>
+    <p class="subtitle">Choose a video and send it to the backend queue.</p>
+
+    <form id="uploadForm" class="card">
+      <label for="videoInput">Select video file</label>
+      <input id="videoInput" name="video" type="file" accept="video/*" required />
+
+      <button id="uploadBtn" type="submit">Upload</button>
+    </form>
+
+    <section class="card">
+      <h2>Response</h2>
+      <pre id="output">No request sent yet.</pre>
+    </section>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>

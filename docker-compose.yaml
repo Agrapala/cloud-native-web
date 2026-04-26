@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+
+  backend:
+    build: ./backend
+    ports:
+      - "3000:3000"
+    environment:
+      AWS_REGION: ap-south-1
+
+  worker:
+    build: ./worker
+    depends_on:
+      - backend
+    environment:
+      AWS_REGION: ap-south-1
